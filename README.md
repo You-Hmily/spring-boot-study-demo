@@ -1,2 +1,4 @@
 # SpringBootLearn
 SpringBootLearn
+20180423 初始化项目
+20180424 项目配置thymeleaf模板和freemarker模板
