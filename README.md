@@ -2,3 +2,4 @@
 SpringBootLearn
 20180423 初始化项目
 20180424 项目配置thymeleaf模板和freemarker模板
+20180425 SpringBoot整合MyBatis，配置数据库。
