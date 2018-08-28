@@ -28,7 +28,7 @@ public class SpringbootApplicationTests {
 	public void findByName() throws Exception {
 		userMapper.insert("AAA", 20);
 		User u = userMapper.findByName("AAA");
-		
+
 		Assert.assertEquals(20, u.getAge().intValue());
 	}
 
