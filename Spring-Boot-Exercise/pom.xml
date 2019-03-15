@@ -8,12 +8,13 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>Spring-Boot-Exercise</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>Spring-Boot-Exercise-Jsp</module>
+        <module>Spring-Boot-Exercise-EmbeddedWebContainer</module>
     </modules>
+
 
 
 </project>
