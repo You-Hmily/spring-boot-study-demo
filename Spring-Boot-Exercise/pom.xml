@@ -13,6 +13,8 @@
     <modules>
         <module>Spring-Boot-Exercise-Jsp</module>
         <module>Spring-Boot-Exercise-EmbeddedWebContainer</module>
+        <module>Spring-Boot-Exercise-Thymeleaf</module>
+        <module>Spring-Boot-Exercise-JDBC</module>
     </modules>
 
 

@@ -10,18 +10,18 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.boot.web.servlet.server.Jsp;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+
 
 /**
  * Created by zyzhmily on 2019/3/14.
  */
 @SpringBootApplication
-@ServletComponentScan(basePackages = {"com.hmily.springboot.servlet",
-                                      "com.hmily.springboot.filter",
-                                      "com.hmily.springboot.listener"})
-public class JspApplication extends SpringBootServletInitializer{
+//@ServletComponentScan(basePackages = {"com.hmily.springboot.servlet",
+//                                      "com.hmily.springboot.filter",
+//                                      "com.hmily.springboot.listener"})
+public class JspApplication extends SpringBootServletInitializer {
 
     /**
      * 1、启动的地方先继承  SpringBootServletInitializer
@@ -43,7 +43,6 @@ public class JspApplication extends SpringBootServletInitializer{
      <dependency>
      <groupId>org.apache.tomcat.embed</groupId>
      <artifactId>tomcat-embed-jasper</artifactId>
-     <scope>provided</scope>
      </dependency>
      <!--JSTL-->
      <dependency>
@@ -75,36 +74,35 @@ public class JspApplication extends SpringBootServletInitializer{
         SpringApplication.run(JspApplication.class,args);
     }
 
-
-    @Bean
-    public  static ServletRegistrationBean servletRegistrationBean(){
-        ServletRegistrationBean servletRegistrationBean=new ServletRegistrationBean();
-
-        servletRegistrationBean.setServlet(new SpringBootServlet());
-        servletRegistrationBean.addUrlMappings("/springBootServlet");
-        return servletRegistrationBean;
-
-    }
-
-    @Bean
-    public  static FilterRegistrationBean filterRegistrationBean(){
-        FilterRegistrationBean filterRegistrationBean=new FilterRegistrationBean();
-
-        filterRegistrationBean.setFilter(new SpringBootFilter());
-        return filterRegistrationBean;
-
-    }
-
-    @Bean
-    public static ServletListenerRegistrationBean servletListenerRegistrationBean(){
-        ServletListenerRegistrationBean servletListenerRegistrationBean=new ServletListenerRegistrationBean();
-        servletListenerRegistrationBean.setListener(new SpringBootListener());
-        return servletListenerRegistrationBean;
-    }
-
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
         builder.sources(JspApplication.class);
         return builder;
     }
+
+//    @Bean
+//    public  static ServletRegistrationBean servletRegistrationBean(){
+//        ServletRegistrationBean servletRegistrationBean=new ServletRegistrationBean();
+//
+//        servletRegistrationBean.setServlet(new SpringBootServlet());
+//        servletRegistrationBean.addUrlMappings("/springBootServlet");
+//        return servletRegistrationBean;
+//
+//    }
+//
+//    @Bean
+//    public  static FilterRegistrationBean filterRegistrationBean(){
+//        FilterRegistrationBean filterRegistrationBean=new FilterRegistrationBean();
+//
+//        filterRegistrationBean.setFilter(new SpringBootFilter());
+//        return filterRegistrationBean;
+//
+//    }
+//
+//    @Bean
+//    public static ServletListenerRegistrationBean servletListenerRegistrationBean(){
+//        ServletListenerRegistrationBean servletListenerRegistrationBean=new ServletListenerRegistrationBean();
+//        servletListenerRegistrationBean.setListener(new SpringBootListener());
+//        return servletListenerRegistrationBean;
+//    }
 
 }
