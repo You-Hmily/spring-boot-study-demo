@@ -52,8 +52,8 @@ public class JspApplication extends SpringBootServletInitializer {
 
      <dependency>
      <groupId>org.springframework.boot</groupId>
-     <artifactId>spring-boot-starter-test</artifactId>
-     <scope>test</scope>
+     <artifactId>spring-boot-starter-user</artifactId>
+     <scope>user</scope>
      </dependency>
      *
      *4、加入相应的配置 WebMvcProperties

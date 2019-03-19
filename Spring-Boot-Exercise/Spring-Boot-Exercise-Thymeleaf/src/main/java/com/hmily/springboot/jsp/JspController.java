@@ -13,7 +13,7 @@ public class JspController {
     @GetMapping("/testjsp")
     public String index(ModelMap modelMap) {
         modelMap.addAttribute("name","Hello JSP!!!");
-        return "test";
+        return "user";
     }
 
 }
