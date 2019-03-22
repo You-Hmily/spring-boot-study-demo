@@ -16,6 +16,7 @@
         <module>Spring-Boot-Exercise-Thymeleaf</module>
         <module>Spring-Boot-Exercise-JDBC</module>
         <module>Spring-Boot-Exercise-Mybatis</module>
+        <module>Spring-Boot-Exercise-Disconf</module>
     </modules>
 
 
