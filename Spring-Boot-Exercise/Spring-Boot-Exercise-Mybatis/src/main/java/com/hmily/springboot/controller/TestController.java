@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,7 +24,11 @@ public class TestController {
     @RequestMapping("/test")
     @ResponseBody
     public List<User> dbTest() throws Exception {
-        List<User> userList = userMapper.selectAll();
+        User user=new User();
+        user.setName("20190325");
+        userMapper.insert(user);
+        List<User> userList=new ArrayList<>();
+        userList.add(user);
         return userList;
     }
 

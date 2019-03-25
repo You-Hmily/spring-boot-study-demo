@@ -1,11 +1,14 @@
 package com.hmily.springboot.entity;
 
+import javax.persistence.Column;
+
 /**
  * Created by zyzhmily on 2019/3/19.
  */
 public class User {
     private int id;
 
+    @Column(name="user_name")
     private String name;
 
     private String address;

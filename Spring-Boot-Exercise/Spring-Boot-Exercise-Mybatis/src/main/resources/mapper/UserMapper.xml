@@ -6,10 +6,14 @@
 
     <resultMap id="UserResultMap" type="com.hmily.springboot.entity.User">
         <id property="id" column="id"/>
-        <result property="name" column="user_name" jdbcType="INTEGER"/>
+        <result property="name" column="user_name" jdbcType="VARCHAR"/>
         <result property="address" column="address" jdbcType="VARCHAR"/>
         <result property="phone" column="phone" jdbcType="VARCHAR"/>
         <result property="score" column="score" jdbcType="INTEGER"/>
     </resultMap>
+
+    <select id="getAll" resultMap="UserResultMap">
+        SELECT * FROM  user
+    </select>
 
 </mapper>
