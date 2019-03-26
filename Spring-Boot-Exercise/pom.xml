@@ -17,6 +17,7 @@
         <module>Spring-Boot-Exercise-JDBC</module>
         <module>Spring-Boot-Exercise-Mybatis</module>
         <module>Spring-Boot-Exercise-Disconf</module>
+        <module>Spring-Boot-Exercise-Dubbo</module>
     </modules>
 
 

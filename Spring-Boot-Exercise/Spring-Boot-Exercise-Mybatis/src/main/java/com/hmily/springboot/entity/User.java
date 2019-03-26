@@ -1,14 +1,16 @@
 package com.hmily.springboot.entity;
 
-import javax.persistence.Column;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 
 /**
  * Created by zyzhmily on 2019/3/19.
  */
+@TableName(value = "user")
 public class User {
     private int id;
 
-    @Column(name="user_name")
+    @TableField(value = "user_name")
     private String name;
 
     private String address;
