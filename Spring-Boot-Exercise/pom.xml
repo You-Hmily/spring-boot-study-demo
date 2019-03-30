@@ -18,6 +18,7 @@
         <module>Spring-Boot-Exercise-Mybatis</module>
         <module>Spring-Boot-Exercise-Disconf</module>
         <module>Spring-Boot-Exercise-Dubbo</module>
+        <module>Spring-Boot-Exercise-Configuration</module>
     </modules>
 
 
