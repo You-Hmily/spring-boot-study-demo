@@ -1,8 +1,11 @@
 package com.hmily.springboot.mybatis.user;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
 import com.hmily.springboot.entity.User;
 import org.apache.ibatis.annotations.Mapper;
+import tk.mybatis.mapper.common.BaseMapper;
+
+import java.util.List;
 
 
 /**
@@ -10,5 +13,5 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface UserMapper extends BaseMapper<User> {
-
+       List<User> getAllList();
 }

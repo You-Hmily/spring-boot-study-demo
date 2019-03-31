@@ -24,12 +24,7 @@ public class TestController {
     @RequestMapping("/test")
     @ResponseBody
     public List<User> dbTest() throws Exception {
-        User user=new User();
-        user.setName("20190325");
-        userMapper.insert(user);
-        List<User> userList=new ArrayList<>();
-        userList.add(user);
-        return userList;
+        return userMapper.selectAll();
     }
 
 }
