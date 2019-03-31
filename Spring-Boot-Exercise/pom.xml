@@ -19,6 +19,7 @@
         <module>Spring-Boot-Exercise-Disconf</module>
         <module>Spring-Boot-Exercise-Dubbo</module>
         <module>Spring-Boot-Exercise-Configuration</module>
+        <module>Spring-Boot-Exercise-Starter</module>
     </modules>
 
 
