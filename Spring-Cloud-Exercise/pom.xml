@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>Spring-Boot-Learn</artifactId>
+        <artifactId>spring-boot-study-demo</artifactId>
         <groupId>com.hmily</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -12,7 +12,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-cloud-eureka</module>
+        <module>spring-cloud-eureka-provide</module>
+        <module>spring-cloud-eureka-consume</module>
     </modules>
-
 
 </project>
