@@ -18,6 +18,7 @@
         <module>spring-cloud-eureka-provide</module>
         <module>spring-cloud-eureka-consume</module>
         <module>spring-cloud-ribbon</module>
+        <module>spring-cloud-config-server</module>
     </modules>
 
 </project>
