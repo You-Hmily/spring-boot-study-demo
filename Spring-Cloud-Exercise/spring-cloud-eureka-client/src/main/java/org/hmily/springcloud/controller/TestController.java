@@ -12,8 +12,7 @@ public class TestController {
     DiscoveryClient discoveryClient;
 
     @GetMapping("/test")
-    public String dc() throws InterruptedException {
-        Thread.sleep(5000L);
+    public String dc() {
         String services = "Services: " + discoveryClient.getServices();
         System.out.println(services);
         return services;
